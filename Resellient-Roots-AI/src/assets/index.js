@@ -1,13 +1,13 @@
-
 import rootsLogo from './logo/roots-logo.svg';
-
+import navbarMobileVersion from './socials/navbar-mobile-version.svg';
 
 const Icons = {
   logo: {
-    rootsLogo: rootsLogo
-  }
+    rootsLogo,
+  },
+  socials: {
+    navbarMobileVersion,
+  },
 };
-
-export { Icons };
 
 export default Icons;
