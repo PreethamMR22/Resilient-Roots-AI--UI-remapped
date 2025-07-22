@@ -6,10 +6,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <main>
-        <Hero />
-        {/* Add more sections here */}
-      </main>
+      <Hero />
     </div>
   )
 }
