@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Icons from '../../assets';
-const { logo: { rootsLogo }, socials: { navbarMobileVersion } } = Icons;
 import './Navbar.css';
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
       <div className="navbar__container">
         <div className="navbar__brand">
           <div className="navbar__logo">
-            <img src={rootsLogo} alt="Resilient Roots Logo" className="navbar__logo-img" />
+            <img src={Icons.logo.rootsLogo} alt="Resilient Roots Logo" className="navbar__logo-img" />
           </div>
           <span className="navbar__brand-text">
             <span className="full-text">RESILIENT ROOTS</span>
@@ -27,7 +26,7 @@ const Navbar = () => {
             <a href="#about" className="navbar__link">About</a>
             <a href="#contact" className="navbar__link">Contact</a>
             <img 
-              src={navbarMobileVersion} 
+              src={Icons.socials.navbarMobileVersion} 
               alt="Mobile menu" 
               className="navbar__mobile-version"
               onClick={() => setIsOpen(!isOpen)}

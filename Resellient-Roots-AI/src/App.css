@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: #333;
-  background-color: rgb(255, 251, 241);
+  background: linear-gradient(118deg, #1F271C 0%, #121A0F 99.93%), #161E13;
 }
 
 .app {

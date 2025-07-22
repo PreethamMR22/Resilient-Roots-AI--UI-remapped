@@ -1,4 +1,4 @@
-/* Navbar.css */
+
 :root {
   --primary-color: #4a90e2;
   --text-color: #333;
@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: rgb(255, 251, 241);
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -45,7 +45,7 @@
 }
 
 .navbar__brand-text {
-  color: #66412E;
+  color: #F9FFF1;
   font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -94,24 +94,44 @@
 }
 
 .navbar__link {
-  color: #66412E;
+  color: #F9FFF1;
+  opacity: 0.7;
   text-decoration: none;
   font-family: 'Clash Display', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  transition: var(--transition);
   padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 4px;
+  right: 0;
+  background-color: #F9FFF1;
+  transition: width 0.4s ease;
 }
 
 .navbar__link:hover {
-color: #66412e9e;
+  opacity: 1;
+  color: #F9FFF1;
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 
 .navbar__button {
   background-color: var(--primary-color);
-  color: white;
+  color: #F9FFF1;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 4px;
@@ -174,7 +194,7 @@ color: #66412e9e;
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: rgb(255, 251, 241);
+    background: linear-gradient(118deg, #1F271C 0%, #121A0F 99.93%), #161E13;
     width: 100%;
     height: calc(100vh - 70px);
     padding: 2rem 30px;
