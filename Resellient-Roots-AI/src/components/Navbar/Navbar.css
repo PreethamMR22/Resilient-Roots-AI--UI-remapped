@@ -50,10 +50,21 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  width: 189px;
-  height: 25px;
   display: flex;
   align-items: center;
+  gap: 4px;
+}
+
+.gradient-text {
+  background: linear-gradient(97deg, #00C8FF 8.2%, #FF00E1 98.56%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .navbar__nav-container {

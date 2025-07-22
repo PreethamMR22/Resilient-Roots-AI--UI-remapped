@@ -13,7 +13,9 @@ const Navbar = () => {
           <div className="navbar__logo">
             <img src={rootsLogo} alt="Resilient Roots Logo" className="navbar__logo-img" />
           </div>
-          <span className="navbar__brand-text">RESILIENT ROOTS AI</span>
+          <span className="navbar__brand-text">
+            RESILIENT ROOTS <span className="gradient-text">AI</span>
+          </span>
         </div>
         
         <div className="navbar__nav-container">
@@ -24,9 +26,6 @@ const Navbar = () => {
             <a href="#contact" className="navbar__link">Contact</a>
           </div>
 
-          <div className="navbar__cta">
-            <button className="navbar__button">Get Started</button>
-          </div>
 
           <div 
             className="navbar__hamburger" 
