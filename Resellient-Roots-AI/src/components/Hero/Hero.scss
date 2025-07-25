@@ -10,7 +10,7 @@ $transition: all 0.3s ease;
   background-color: $light-bg;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+
 
   &__container {
     max-width: 1200px;
@@ -19,11 +19,10 @@ $transition: all 0.3s ease;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
 
     @media (max-width: 992px) {
       grid-template-columns: 1fr;
-      text-align: center;
+ 
       gap: 2rem;
     }
   }
@@ -38,6 +37,8 @@ $transition: all 0.3s ease;
     color: $text-color;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    letter-spacing: 1.5px;
+
 
     @media (max-width: 768px) {
       font-size: 2.5rem;
@@ -100,13 +101,12 @@ $transition: all 0.3s ease;
       padding: 2rem;
       height: 400px;
       display: flex;
-      align-items: center;
+     
       justify-content: center;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
     &-content {
-      text-align: center;
       color: $primary-color;
       font-weight: 600;
     }

@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-items: center;
   justify-content: flex-start;
   text-align: left;
   background: linear-gradient(118deg, #1F271C 0%, #121A0F 99.93%), #161E13;
@@ -16,22 +15,132 @@
 .hero__content {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+  margin: 180px 0 0 80px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 
 .hero__title {
+  width: 758px;
   color: #F9FFF1;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-size: 75px;
   font-style: normal;
   font-weight: 500;
-  line-height: 64px;
-  letter-spacing: -3.75px;
+  line-height: 64px; /* 85.333% */
   margin: 0;
-  max-width: 900px;
+  letter-spacing: 1.5px !important; /* Increased letter spacing */
+  word-spacing: 10px; /* Space between words */
+  text-transform: none; /* Ensure no text transformation */
+}
+
+.hero__description {
+  color: #F9FFF1;
+  font-family: "Clash Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 467px;
+  margin: 75px 0 0 0; /* 75px gap from the hero title */
+  padding: 0;
+  letter-spacing: 0.5px;
+}
+
+.hero__cta {
+  display: inline-block;
+  margin: 40px 0 0 20px; /* 20px left margin added */
+  position: relative;
+  height: 45px; /* Fixed height to prevent layout shift */
+}
+
+.hero__explore-btn {
+  background: transparent;
+  border: none;
+  color: #F9FFF1;
+  font-family: "Clash Display";
+  font-size: 21px;
+  font-weight: 400;
+  padding: 0 45px 0 22px; /* Added 20px left padding */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  text-align: left;
+  height: 45px;
+  overflow: hidden;
+}
+
+.hero__explore-text {
+  position: relative;
+  z-index: 3;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding-right: 10px; /* 10px gap between text and circle */
+}
+
+.hero__circle {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #F9FFF1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.hero__arrow {
+  width: 18.439px;
+  height: 18.439px;
+  flex-shrink: 0;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover State */
+.hero__explore-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #F9FFF1;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+  transform-origin: right center;
+}
+
+.hero__explore-btn:hover::before {
+  width: 210px;
+  height: 45px;
+  border-radius: 30px;
+  right: 0;
+}
+
+.hero__explore-btn:hover .hero__explore-text {
+  color: #192116;
+  z-index: 3;
+  position: relative;
+}
+
+.hero__explore-btn:hover .hero__arrow {
+  transform: rotate(35deg);
+  z-index: 3;
+  position: relative;
+}
+
+.hero__explore-btn:hover .hero__circle {
+  background-color: transparent;
 }
 
 /* Responsive styles */
@@ -65,15 +174,99 @@
     letter-spacing: -2px;
     line-height: 1.1;
   }
+  
+  .hero__cta {
+    margin: 30px 0 0 10px;
+  }
+  
+  .hero__explore-btn {
+    font-size: 18px;
+    padding: 0 40px 0 15px;
+    height: 40px;
+  }
+  
+  .hero__circle {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hero__arrow {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hero__explore-btn:hover::before {
+    width: 180px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero__content {
-    padding: 0 20px;
+    padding: 0 15px 0 10px; /* Increased left padding to shift right */
+    margin-left: 5px; /* Added margin to shift right */
+    margin-top: 120px;
   }
   
   .hero__title {
     font-size: 36px;
     letter-spacing: -1.5px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .hero__description {
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  
+  .hero__cta {
+    margin: 20px 0 0 5px; /* Added slight left margin and reduced top margin */
+    height: 38px;
+  }
+  
+  .hero__explore-btn {
+    font-size: 16px;
+    padding: 0 40px 0 15px; /* Adjusted right padding to match new circle size */
+    height: 45px;
+  }
+  
+  .hero__circle {
+    width: 40px; /* Slightly smaller for mobile */
+    height: 40px; /* Slightly smaller for mobile */
+  }
+  
+  .hero__arrow {
+    width: 18px; /* Slightly larger for better visibility */
+    height: 18px; /* Slightly larger for better visibility */
+    transition: transform 0.3s ease; /* Smooth rotation */
+  }
+  
+  .hero__explore-btn:hover::before {
+    width: 160px;
+    height: 38px;
+  }
+  
+  /* Adjust hover effect for touch devices */
+  @media (hover: none) {
+    .hero__explore-btn:active::before {
+      width: 160px;
+      height: 38px;
+      border-radius: 30px;
+    }
+    
+    .hero__explore-btn:active .hero__explore-text {
+      color: #192116;
+    }
+    
+    .hero__explore-btn:active .hero__arrow {
+      transform: rotate(35deg);
+    }
+    
+    .hero__explore-btn:active .hero__circle {
+      background-color: transparent;
+    }
   }
 }
