@@ -1,7 +1,8 @@
 import rootsLogo from './logo/roots-logo.svg';
 import navbarMobileVersion from './socials/navbar-mobile-version.svg';
 import arrowUpRight from './socials/ArrowUpRight.svg';
-
+import search from './socials/search.svg';
+import star from './socials/star.svg';
 const Icons = {
   logo: {
     rootsLogo,
@@ -9,6 +10,8 @@ const Icons = {
   socials: {
     navbarMobileVersion,
     arrowUpRight,
+    search,
+    star,
   },
 };
 
