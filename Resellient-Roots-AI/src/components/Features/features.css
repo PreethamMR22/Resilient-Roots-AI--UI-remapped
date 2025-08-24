@@ -1,0 +1,118 @@
+.features-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 0;
+  background-color: #1A1E17;
+  display: flex;
+  justify-content: center;
+}
+
+.features-content {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-title {
+  color: #F9FFF1;
+  font-family: "Clash Display";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -2.75px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.features-subtitle {
+  color: #F9FFF1;
+  text-align: center;
+  font-family: "Clash Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 60px 0;
+}
+
+.features-boxes {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-box {
+  width: 33.333%;
+  height: 450px;
+  flex-shrink: 0;
+  border: 1px solid #2D352A;
+  background: #F9FFF1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-image-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: scale(1);
+}
+
+.feature-box:hover .feature-image {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+}
+
+.feature-box-title {
+  color: #161E13;
+  text-align: center;
+  font-family: "Clash Display";
+  font-size: 23.45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 31px 0 10px 0;
+  padding: 0 20px;
+}
+
+.feature-box-subtitle {
+  width: 310px;
+  color: #161E13;
+  text-align: center;
+  font-family: "Clash Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
