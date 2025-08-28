@@ -1,0 +1,141 @@
+.review-card {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  background: #F9FFF1;
+  width: 265px;
+  height: 260px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 52px;
+}
+
+.reviewer-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-photo-placeholder {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #E8F5E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2D352A;
+  font-family: 'Clash Display';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.reviewer-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviewer-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reviewer-name {
+  color: #2D352A;
+  text-align: right;
+  font-family: "Clash Display";
+  font-size: 19.645px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.reviewer-email {
+  color: #2D352A;
+  font-family: "Clash Display";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 19px 0 10px 0;
+
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.review-card-content-wrapper {
+  margin: 19.46px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5.84px;
+}
+
+.review-card-title {
+  align-self: stretch;
+  color: #2D352A;
+  font-family: "Clash Display";
+  font-size: 19.645px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 0 5px 0;
+}
+
+.review-card-text {
+  color: #2D352A;
+  font-family: "Clash Display";
+  font-size: 13.096px;
+  width: 218px;
+  height: 80px;
+  margin: 0;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .reviewer-name {
+    font-size: 16px;
+  }
+  
+  .review-card-text {
+    font-size: 13px;
+  }
+}
