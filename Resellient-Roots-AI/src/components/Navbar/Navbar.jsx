@@ -50,7 +50,7 @@ const Navbar = () => {
             <a href="#about" className="navbar__link" onClick={(e) => scrollToSection(e, 'about')}>About</a>
             <a href="#contact" className="navbar__link" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
             <img 
-              src={Icons.socials.navbarMobileVersion} 
+              src={Icons.socials.userIcon} 
               alt="Mobile menu" 
               className="navbar__mobile-version"
               onClick={() => setIsOpen(!isOpen)}

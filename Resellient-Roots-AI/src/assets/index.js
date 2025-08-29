@@ -4,6 +4,7 @@ import arrowUpRight from './socials/ArrowUpRight.svg';
 import search from './socials/search.svg';
 import star from './socials/star.svg';
 import yellowStar from './socials/Star-yellow.svg';
+import userIcon from './socials/user.png';
 const Icons = {
   logo: {
     rootsLogo,
@@ -14,6 +15,7 @@ const Icons = {
     search,
     star,
     yellowStar,
+    userIcon,
   },
   review: {
     
