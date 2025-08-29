@@ -20,6 +20,15 @@ const Navbar = () => {
     };
   }, [scrolled]);
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false); // Close mobile menu after clicking a link
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__container">
@@ -36,10 +45,10 @@ const Navbar = () => {
         
         <div className="navbar__nav-container">
           <div className={`navbar__menu ${isOpen ? 'active' : ''}`}>
-            <a href="#home" className="navbar__link">Home</a>
-            <a href="#features" className="navbar__link">Features</a>
-            <a href="#about" className="navbar__link">About</a>
-            <a href="#contact" className="navbar__link">Contact</a>
+            <a href="#home" className="navbar__link" onClick={(e) => scrollToSection(e, 'home')}>Home</a>
+            <a href="#features" className="navbar__link" onClick={(e) => scrollToSection(e, 'features')}>Features</a>
+            <a href="#about" className="navbar__link" onClick={(e) => scrollToSection(e, 'about')}>About</a>
+            <a href="#contact" className="navbar__link" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
             <img 
               src={Icons.socials.navbarMobileVersion} 
               alt="Mobile menu" 

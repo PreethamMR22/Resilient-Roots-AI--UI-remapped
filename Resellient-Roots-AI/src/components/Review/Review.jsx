@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Review.css';
 import ReviewCard from './reviewCard';
+import ReviewModal from './ReviewModal';
 
 // Import photos
 import rangappaPhoto from '../../assets/review/biligiri ranga.svg';
 import kariBasappPhoto from '../../assets/review/kari-basapp.svg';
 import puttSomannaPhoto from '../../assets/review/puttSomanna.svg';
 const Review = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  console.log('Modal state:', isModalOpen);
+
+  const handleReviewSubmit = (reviewData) => {
+    // Here you would typically send the review to your backend
+    console.log('Review submitted:', reviewData);
+    // The modal will close automatically after submission
+  };
   return (
     <section className="review">
       <div className="review-content">
@@ -16,7 +26,20 @@ const Review = () => {
             We strive to provide the best service through Disease Prediction, Report Generation, and Fertilizer Recommendation... 
             Drop your suggestions here!
           </p>
-          <button className="review-button">Write a Review</button>
+          <button 
+            className="review-button"
+            onClick={() => {
+              console.log('Button clicked, setting modal to open');
+              setIsModalOpen(true);
+            }}
+          >
+            Write a Review
+          </button>
+          <ReviewModal 
+            isOpen={isModalOpen} 
+            onClose={() => setIsModalOpen(false)}
+            onSubmit={handleReviewSubmit}
+          />
         </div>
         <div className="review-right">
           <div className="review-card-stack">

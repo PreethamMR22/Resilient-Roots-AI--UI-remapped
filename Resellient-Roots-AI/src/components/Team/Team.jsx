@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './Team.css';
 import preethamImg from '../../assets/team/preetham.png';
+import preetham2Img from '../../assets/team/preetham2.jpg'
 
 const teamMembers = [
   {
     id: 1,
     name: 'Rohan R Gowda',
     role: 'AIML Developer',
-    image: preethamImg
+    image: preetham2Img
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const teamMembers = [
     id: 3,
     name: 'Preetham Raj',
     role: 'Web developer',
-    image: preethamImg
+    image: preetham2Img
   },
   {
     id: 4,
@@ -31,7 +32,7 @@ const teamMembers = [
     id: 5,
     name: 'Anmol Rathan Rao',
     role: 'UI/UX Designer',
-    image: preethamImg
+    image: preetham2Img
   }
 ];
 

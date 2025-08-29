@@ -24,6 +24,27 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.review-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  position: relative;
+  z-index: 10;
+}
+
+.review-button:hover {
+  background-color: #45a049;
 }
 
 .review-right {
