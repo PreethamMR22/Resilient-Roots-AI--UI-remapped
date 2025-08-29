@@ -14,7 +14,15 @@ const Hero = () => {
           Leaf Disease detection using Deep Learning Model, find the efficient fertilizer to cure your disease.
         </p>
         <div className="hero__cta">
-          <button className="hero__explore-btn">
+          <button 
+            className="hero__explore-btn"
+            onClick={() => {
+              const aboutSection = document.getElementById('about');
+              if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             <span className="hero__explore-text">Explore More</span>
             <div className="hero__circle">
               <img 

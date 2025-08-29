@@ -27,7 +27,7 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <div className="features-container">
+    <div className="features-container" id="features">
       <div className="features-content">
         <h1 className="features-title">Disease Prediction</h1>
         <p className="features-subtitle">Prediction The Disease pleaseeeeee.....</p>
