@@ -1,0 +1,150 @@
+.team-container {
+  width: 100%;
+  min-height: 270px;
+  background-color: rgb(28, 36, 25);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 36px;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.team-heading {
+  color: #FFF;
+  text-align: center;
+  font-family: "Clash Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 0 19px 0;
+}
+
+.team-divider {
+  width: 100%;
+  max-width: 1060px;
+  height: 1px;
+  background-color: #FFF;
+  margin: 0 auto 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-member-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #FFF;
+  margin: 0 -15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.member-popup {
+  position: absolute;
+  width: 150px;
+  background: white;
+  border-radius: 8px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transform-origin: bottom center;
+  transition: all 0.3s ease-in-out;
+  z-index: 20;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  padding: 12px;
+  text-align: center;
+  pointer-events: none;
+  margin-bottom: 10px;
+}
+
+.member-name {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  color: #1A1A1A;
+  font-size: 14px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.member-role {
+  font-family: 'Clash Display', sans-serif;
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.team-member-circle:hover .member-popup {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Add a small arrow at the bottom of the popup */
+.member-popup::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.team-member-circle.main-circle {
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 -15px;
+}
+
+.team-member-circle.outer-circle {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 -15px;
+}
+
+.team-member-circle:hover {
+  transform: scale(1.25);
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-circle.main-circle:hover {
+  transform: scale(1.25);
+}
+
+.team-member-circle.outer-circle:hover {
+  transform: scale(1.25);
+  background-color: rgba(255, 255, 255, 0.5);
+}
