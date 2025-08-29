@@ -20,10 +20,38 @@ const Footer = () => {
           </div>
           <h2 className="footer__contact-heading">Contact Us</h2>
           <div className="footer__emails">
-            <a href="mailto:contact@resilientroots.ai" className="footer__email">contact@resilientroots.ai</a>
-            <a href="mailto:support@resilientroots.ai" className="footer__email">support@resilientroots.ai</a>
-            <a href="mailto:info@resilientroots.ai" className="footer__email">info@resilientroots.ai</a>
-            <a href="mailto:hello@resilientroots.ai" className="footer__email">hello@resilientroots.ai</a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=preethammr.is23@rvce.edu.in&su=With%20regards%20to%20Resilient%20Roots%20AI" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer__email"
+            >
+              preethammr.is23@rvce.edu.in
+            </a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rohanrgowda.is23@rvce.edu.in&su=With%20regards%20to%20Resilient%20Roots%20AI" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer__email"
+            >
+              rohanrgowda.is23@rvce.edu.in
+            </a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=shripadmaradi.cd23@rvce.edu.in&su=With%20regards%20to%20Resilient%20Roots%20AI" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer__email"
+            >
+              shripadmaradi.cd23@rvce.edu.in
+            </a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=amoghap.ai23@rvce.edu.in&su=With%20regards%20to%20Resilient%20Roots%20AI" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer__email"
+            >
+              amoghap.ai23@rvce.edu.in
+            </a>
           </div>
         </div>
 
