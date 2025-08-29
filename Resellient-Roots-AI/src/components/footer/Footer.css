@@ -1,0 +1,170 @@
+.footer {
+  width: 100%;
+  height: 270px;
+  background-color: rgb(18, 25, 16);
+  padding: 33px 0px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 ;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__left,
+.footer__right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__center {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__right {
+  align-items: flex-end;
+  text-align: right;
+  padding-left: 10%;
+}
+
+.footer__left {
+  padding-right: 10%;
+}
+
+/* Code Warriors Section */
+.footer__code-warriors {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 33.333px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 170px;
+  margin-top: 60px;
+  letter-spacing: -0.5px;
+}
+
+/* Phone Numbers */
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer__phone {
+  color: #FFF;
+  font-family: 'Lexend', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer__phone:hover {
+  opacity: 0.8;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer__contact-heading {
+  color: #FFF;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20.667px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.footer__emails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__email {
+  color: #FFF;
+  font-family: 'Lexend', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer__email:hover {
+  opacity: 0.8;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.footer__logo-img {
+  height: 100%;
+  width: auto;
+}
+
+.footer__brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.footer__brand-text .gradient-text {
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hide full text on smaller screens */
+.full-text {
+  display: inline;
+}
+
+.short-text {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 20px;
+  }
+  
+  .full-text {
+    display: none;
+  }
+  
+  .short-text {
+    display: inline;
+  }
+}
